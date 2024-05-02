@@ -29,7 +29,7 @@ const todoSlice = createSlice({
     // updateTodo reducer function
     updateTodo: (state, action) => {
       state.todos = state.todos.map((todo) =>
-        todo.id === action.payload.id ? { ...todo, Text: action.payload } : todo
+        todo.id === action.payload.id ? { ...todo, Text: action.payload.Text } : todo
       );
     },
     // toggleTodo reducer function
